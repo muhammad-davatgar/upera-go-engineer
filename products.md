@@ -2,7 +2,7 @@
 
 ## Objective:
 
-Develop a comprehensive system in Golang that manages the revisions of products on a shopping site. As products evolve, their attributes might change, including price, description, and more. It's essential to maintain a history of these revisions for analysis and traceability purposes.
+Develop a comprehensive system in Golang that manages the revisions of products on a shopping site. As products evolve, their attributes might change, including price, color, description, and more. It's essential to maintain a history of these revisions for analysis and traceability purposes.
 
 ---
 
@@ -13,6 +13,7 @@ Develop a comprehensive system in Golang that manages the revisions of products 
 - Unique ID
 - Name
 - Description
+- Color
 - Price
 - Image URL
 - Timestamp of creation and update
@@ -66,14 +67,6 @@ Instead of saving revisions directly upon product update, produce an event and c
 ### 4. Integration Tests:
 
 - Integration tests covering the APIs and database operations.
-
-### 6. **Monitoring with Prometheus**:
-
-Implement monitoring for your application using Prometheus. Integrate with the [Prometheus Go client library](https://github.com/prometheus/client_golang) to set up custom metrics that can help in monitoring the performance and health of your application.
-
-### 7. **Distributed Tracing with OpenTracing**:
-
-Integrate [OpenTracing](https://opentracing.io/) for distributed tracing. This should provide insights into the journey of requests as they travel across various components of the system, helping in diagnosing performance bottlenecks and understanding system behavior.
 
 ---
 
